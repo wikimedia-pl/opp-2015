@@ -8,6 +8,8 @@
     <meta name="description" content="Przekaż 1% podatku na Wikipedię lub inny projekt Wikimedia poprzez Stowarzyszenie Wikimedia Polska - nr KRS: 0000244732" />
     <title>1% podatku dla Wikipedii - 100% wiedzy dla Ciebie - Przekaż 1% podatku na Wikimedia Polska</title>
 
+    <meta property="og:image" content="img/fb-icon.png" />
+
     <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -50,6 +52,27 @@
         </div>
     </section>
 
+    <section id="opp" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Złóż podarunek wiedzy!</h2>
+                    <p class="byline">Stowarzyszenie Wikimedia Polska od 2007 roku posiada status Organizacji Pożytku Publicznego, dzięki czemu na rozwój naszej działalności można przekazać 1% swojego podatku.</p>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p>W 2014 roku, tak jak w latach ubiegłych, każdy podatnik, który chce przekazać 1% swojego podatku dochodowego na rzecz wybranej organizacji OPP, robi to za pośrednictwem Urzędu Skarbowego.</p>
+                            <p>To proste, wystarczy w odpowiedniej rubryce rocznego zeznania podatkowego (PITy 36-39) wpisać numer KRS:</p>
+                            <h2>
+                                <input id="oppnr" type="text" value="0000244732" readonly="readonly" />
+                            </h2>
+                        </div>
+                        <div class="col-md-4">Jeżeli podatnik rozliczany jest przez pracodawcę (deklaracja PIT-40), nie ma możliwości przekazania 1% podatku na organizację pożytku publicznego. Celem przekazania 1% podatnik musi sam wypełnić zeznanie roczne. Szczegółowe instrukcje wypełniania deklaracji PIT można znaleźć na <a href="http://www.finanse.mf.gov.pl/documents/766655/12410385/wwwULOTKA-krok_po_kroku_2015.pdf" target="_blank">stronie internetowej Ministerstwa Finansów</a>.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section id="achievements" class="content-section text-center">
         <div class="container">
             <div class="row">
@@ -138,27 +161,6 @@
         </div>
     </section>
 
-
-    <section id="opp" class="content-section text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Złóż podarunek wiedzy!</h2>
-                    <p class="byline">Stowarzyszenie Wikimedia Polska od 2007 roku posiada status Organizacji Pożytku Publicznego, dzięki czemu na rozwój naszej działalności można przekazać 1% swojego podatku.</p>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <p>W 2014 roku, tak jak w latach ubiegłych, każdy podatnik, który chce przekazać 1% swojego podatku dochodowego na rzecz wybranej organizacji OPP, robi to za pośrednictwem Urzędu Skarbowego.</p>
-                            <p>To proste, wystarczy w odpowiedniej rubryce rocznego zeznania podatkowego (PITy 36-39) wpisać numer KRS:</p>
-                            <h2>0000244732</h2>
-                        </div>
-                        <div class="col-md-4">Jeżeli podatnik rozliczany jest przez pracodawcę (deklaracja PIT-40), nie ma możliwości przekazania 1% podatku na organizację pożytku publicznego. Celem przekazania 1% podatnik musi sam wypełnić zeznanie roczne. Szczegółowe instrukcje wypełniania deklaracji PIT można znaleźć na <a href="http://www.finanse.mf.gov.pl/documents/766655/12410385/wwwULOTKA-krok_po_kroku_2015.pdf" target="_blank">stronie internetowej Ministerstwa Finansów</a>.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer id="contact">
         <div class="container content-section text-center">
             <div class="row">
@@ -190,6 +192,9 @@
         $('a[href*=#]').on('click', function(event){     
             event.preventDefault();
             $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+        });
+        $('#oppnr').on('click', function() {
+            this.select();
         });
     </script>
     <!-- Piwik -->

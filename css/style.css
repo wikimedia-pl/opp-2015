@@ -145,6 +145,7 @@ a:focus {
     color: #222;
     text-align: left;
     font-weight: 500;
+    clear: both;
 }
 
 .img-thumbnail .col-md-6 {
@@ -313,14 +314,14 @@ footer .copyright p {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: #FBE1CC;
+    background: rgba(251, 225, 204, 0.7);
 }
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: #FBE1CC;
+    background: rgba(251, 225, 204, 0.7);
 }
 
 img::selection {
@@ -349,6 +350,10 @@ body {
 #opp, #achievements {
     border-top: 30px solid #f0f4f4;
     padding-bottom: 50px;
+}
+
+#oppnr {
+    border: 0;
 }
 
 #achievements .col-md-9 p, #achievements .col-md-4 p {
